@@ -1,0 +1,21 @@
+locale = "id"
+label = "Indonesia"
+weight = 1
+title = "Nusakabar"
+
+[params]
+  displayName = "Indonesia"
+  isoCode = "id"
+  rtl = false
+  dateFormat = "2 January 2006"
+  logo = "" # opsional, isi path logo kalau ada
+  description = "Portal berita terkini seputar politik, ekonomi, olahraga, dan teknologi."
+
+[params.author]
+  name = "Redaksi"
+  email = ""
+  headline = "Menyajikan berita terkini dan terpercaya."
+  bio = "Portal berita independen."
+  links = [
+    { github = "https://github.com/paisaal" },
+  ]

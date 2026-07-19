@@ -1,0 +1,50 @@
+# -- Main Menu --
+# Menu navigasi utama portal berita
+
+[[main]]
+  name = "Beranda"
+  pageRef = "/"
+  weight = 1
+
+[[main]]
+  name = "Politik"
+  pageRef = "categories/politik"
+  weight = 10
+
+[[main]]
+  name = "Kuliner"
+  pageRef = "categories/kuliner"
+  weight = 20
+
+[[main]]
+  name = "Lifestyle"
+  pageRef = "categories/lifestyle"
+  weight = 30
+
+[[main]]
+  name = "Teknologi"
+  pageRef = "categories/teknologi"
+  weight = 40
+
+[[main]]
+  identifier = "github"
+  pre = "github"
+  url = "https://github.com/paisaal"
+  weight = 400
+
+# -- Footer Menu --
+
+[[footer]]
+  name = "Tentang Kami"
+  pageRef = "tentang-kami"
+  weight = 5
+
+[[footer]]
+  name = "Kontak"
+  pageRef = "kontak"
+  weight = 8
+
+[[footer]]
+  name = "Penulis"
+  pageRef = "authors"
+  weight = 20
