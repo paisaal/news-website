@@ -13,7 +13,13 @@
     {{ $images := .Resources.ByType "image" }}
     {{ range slice "*feature*" "*cover*" "*thumbnail*" }}
       {{ if not $featuredURL }}
-        {{ with $images.GetMatch . }}{{ $featuredURL = .RelPermalink }}{{ end }}
+        {{ with $images.GetMatch . }}
+          {{ if eq .MediaType.SubType "svg" }}
+            {{ $featuredURL = .RelPermalink }}
+          {{ else }}
+            {{ $featuredURL = (.Resize "1200x q75").RelPermalink }}
+          {{ end }}
+        {{ end }}
       {{ end }}
     {{ end }}
     {{ if not $featuredURL }}
