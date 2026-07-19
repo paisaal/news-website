@@ -3,4 +3,34 @@
     max-height: 44px !important;
     max-width: 220px !important;
   }
+  .min-h-\[148px\] {
+    min-height: 100px !important;
+  }
+
+  /* Border kartu + hover effect */
+  .article-link--card {
+    border-color: #d8ddd4 !important;
+    border-radius: 10px !important;
+    transition: border-color 0.15s ease, transform 0.15s ease;
+  }
+
+  .article-link--card:hover {
+    border-color: #1f4d3a !important;
+    transform: translateY(-2px);
+  }
+
+  /* Hero card — efek hover */
+  .hero-card {
+    border-radius: 10px !important;
+    overflow: hidden;
+    display: block;
+  }
+
+  .hero-card img {
+    transition: transform 0.3s ease;
+  }
+
+  .hero-card:hover img {
+    transform: scale(1.05);
+  }
 </style>
