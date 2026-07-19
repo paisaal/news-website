@@ -58,8 +58,8 @@ article h1, article h2 {
 }
 
 .article-link--card:hover {
-  border-color: #1f4d3a !important; /* hijau kanopi muncul pas di-hover */
-  transform: translateY(-2px); /* kartu naik dikit */
+  border-color: #1f4d3a !important; 
+  transform: translateY(-2px); 
 }
 
 /* 4. Hero card — efek hover */
@@ -74,5 +74,5 @@ article h1, article h2 {
 }
 
 .hero-card:hover img {
-  transform: scale(1.05); /* gambar zoom in dikit pas di-hover */
+  transform: scale(1.05);
 }

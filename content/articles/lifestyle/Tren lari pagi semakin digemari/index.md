@@ -9,9 +9,7 @@ summary: "Beragam kreasi minuman berbahan Nescafé semakin populer di media sosi
 readingTime: 3
 ---
 
-Tren Lari Pagi Semakin Digemari, Gaya Hidup Sehat Jadi Pilihan Generasi Muda
-
-Bogor Selatan, 18 Juli 2026 – Aktivitas lari pagi semakin populer di kalangan masyarakat, khususnya generasi muda yang mulai menjadikan olahraga sebagai bagian dari gaya hidup sehari-hari. Selain mudah dilakukan, lari juga dinilai sebagai olahraga yang efektif untuk menjaga kebugaran tubuh sekaligus mengurangi stres akibat rutinitas yang padat.
+Aktivitas lari pagi semakin populer di kalangan masyarakat, khususnya generasi muda yang mulai menjadikan olahraga sebagai bagian dari gaya hidup sehari-hari. Selain mudah dilakukan, lari juga dinilai sebagai olahraga yang efektif untuk menjaga kebugaran tubuh sekaligus mengurangi stres akibat rutinitas yang padat.
 
 Di berbagai taman kota, stadion, hingga kawasan car free day, jumlah pelari terus meningkat setiap akhir pekan. Banyak komunitas lari bermunculan dan rutin mengadakan kegiatan bersama, mulai dari sesi latihan santai hingga persiapan mengikuti ajang lari 5K, 10K, maupun maraton.
 
