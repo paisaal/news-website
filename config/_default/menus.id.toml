@@ -7,24 +7,19 @@
   weight = 1
 
 [[main]]
-  name = "Politik"
-  pageRef = "categories/politik"
-  weight = 10
-
-[[main]]
   name = "Kuliner"
   pageRef = "categories/kuliner"
-  weight = 20
+  weight = 10
 
 [[main]]
   name = "Lifestyle"
   pageRef = "categories/lifestyle"
-  weight = 30
+  weight = 20
 
 [[main]]
   name = "Teknologi"
   pageRef = "categories/teknologi"
-  weight = 40
+  weight = 30
 
 [[main]]
   identifier = "github"

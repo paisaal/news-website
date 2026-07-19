@@ -6,7 +6,7 @@ summary: "Beragam kreasi minuman berbahan Nescafé semakin populer di media sosi
 categories: ["Kuliner"]
 tags: ["Kopi", "Nescafé", "Minuman", "Kuliner", "Lifestyle"]
 authors:
-  - "zaenal"
+  - "Zaenal"
 showAuthor: true
 ---
 

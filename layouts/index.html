@@ -1,0 +1,106 @@
+{{ define "main" }}
+  {{ $articles := where site.RegularPages "Type" "in" site.Params.mainSections }}
+  {{ $articles = $articles.ByDate.Reverse }}
+  {{ $hero := index $articles 0 }}
+  {{ $rest := after 1 $articles }}
+
+  {{ if .Content }}
+    <div class="prose dark:prose-invert max-w-full mb-6">{{ .Content }}</div>
+  {{ end }}
+
+  {{ with $hero }}
+    {{ $featuredURL := "" }}
+    {{ $images := .Resources.ByType "image" }}
+    {{ range slice "*feature*" "*cover*" "*thumbnail*" }}
+      {{ if not $featuredURL }}
+        {{ with $images.GetMatch . }}{{ $featuredURL = .RelPermalink }}{{ end }}
+      {{ end }}
+    {{ end }}
+    {{ if not $featuredURL }}
+      {{ $default := site.Store.Get "defaultFeaturedImage" }}
+      {{ if $default.url }}
+        {{ $featuredURL = $default.url }}
+      {{ else if $default.obj }}
+        {{ $featuredURL = $default.obj.RelPermalink }}
+      {{ end }}
+    {{ end }}
+
+    <style>
+      .hero-card {
+        position: relative;
+        display: block;
+        border-radius: 0.75rem;
+        overflow: hidden;
+        min-height: 340px;
+        color: #fff;
+        text-decoration: none;
+        margin-bottom: 2rem;
+      }
+      .hero-card img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .hero-card .hero-overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(to top, rgba(0,0,0,.75), rgba(0,0,0,.1) 60%);
+      }
+      .hero-card .hero-text {
+        position: relative;
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        min-height: 340px;
+      }
+      .hero-card .hero-badge {
+        display: inline-block;
+        background: var(--color-primary-500, #6366f1);
+        font-size: 0.75rem;
+        font-weight: 600;
+        padding: 0.2rem 0.6rem;
+        border-radius: 9999px;
+        margin-bottom: 0.75rem;
+        width: fit-content;
+      }
+      .hero-card .hero-title {
+        font-size: 1.75rem;
+        font-weight: 800;
+        line-height: 1.2;
+      }
+      .hero-card .hero-meta {
+        margin-top: 0.5rem;
+        font-size: 0.875rem;
+        opacity: 0.85;
+      }
+    </style>
+
+    <a href="{{ .RelPermalink }}" class="hero-card">
+      {{ with $featuredURL }}<img src="{{ . }}" alt="" loading="lazy">{{ end }}
+      <div class="hero-overlay"></div>
+      <div class="hero-text">
+        {{ with .Params.categories }}
+          <span class="hero-badge">{{ index . 0 }}</span>
+        {{ end }}
+        <h1 class="hero-title">{{ .Title | emojify }}</h1>
+        <div class="hero-meta">
+          {{ $months := slice "" "Januari" "Februari" "Maret" "April" "Mei" "Juni" "Juli" "Agustus" "September" "Oktober" "November" "Desember" }}
+          {{ .Date.Day }} {{ index $months (int .Date.Month) }} {{ .Date.Year }}
+          {{ with .Params.authors }}· {{ delimit . ", " }}{{ end }}
+        </div>
+      </div>
+    </a>
+  {{ end }}
+
+  {{ if $rest }}
+    <h2 class="mt-8 text-2xl font-extrabold mb-6">Berita Lainnya</h2>
+    <section class="w-full grid gap-4 sm:grid-cols-2 md:grid-cols-3">
+      {{ range $rest }}
+        {{ partial "article-link/card.html" . }}
+      {{ end }}
+    </section>
+  {{ end }}
+{{ end }}
