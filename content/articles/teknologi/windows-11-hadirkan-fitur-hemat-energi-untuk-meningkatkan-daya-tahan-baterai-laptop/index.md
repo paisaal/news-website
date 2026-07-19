@@ -20,7 +20,7 @@ tags:
 authors:
   - nurfaisal
 showAuthor: true
-cover: 116551.jpg
+cover: 116561.jpg
 ---
 Microsoft terus mengembangkan Windows 11 melalui berbagai pembaruan yang berfokus pada peningkatan pengalaman pengguna. Salah satu fitur yang kini banyak dimanfaatkan adalah mode hemat energi yang dirancang untuk membantu memperpanjang daya tahan baterai pada laptop.
 
