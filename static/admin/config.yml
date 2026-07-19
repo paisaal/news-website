@@ -1,0 +1,83 @@
+backend:
+  name: git-gateway
+  branch: main
+
+publish_mode: simple
+media_folder: ""
+public_folder: ""
+
+collections:
+  - name: "kuliner"
+    label: "Kuliner"
+    folder: "content/articles/kuliner"
+    create: true
+    slug: "{{slug}}"
+    path: "{{slug}}/index"
+    media_folder: ""
+    public_folder: ""
+    fields:
+      - { label: "Judul", name: "title", widget: "string" }
+      - { label: "Tanggal", name: "date", widget: "datetime" }
+      - { label: "Draft (belum tayang)", name: "draft", widget: "boolean", default: false }
+      - { label: "Ringkasan (SEO)", name: "description", widget: "text" }
+      - { label: "Ringkasan (tampil di list)", name: "summary", widget: "text" }
+      - { label: "Kategori", name: "categories", widget: "hidden", default: ["Kuliner"] }
+      - { label: "Tag", name: "tags", widget: "list", default: ["kuliner"] }
+      - label: "Penulis"
+        name: "authors"
+        widget: "select"
+        multiple: true
+        options: ["nurfaisal", "zaenal"]
+      - { label: "Tampilkan Penulis", name: "showAuthor", widget: "boolean", default: true }
+      - { label: "Foto Cover", name: "cover", widget: "image", required: false, hint: "PENTING: nama file foto WAJIB mengandung kata cover, contoh: cover-nescafe.jpg" }
+      - { label: "Isi Berita", name: "body", widget: "markdown" }
+
+  - name: "lifestyle"
+    label: "Lifestyle"
+    folder: "content/articles/lifestyle"
+    create: true
+    slug: "{{slug}}"
+    path: "{{slug}}/index"
+    media_folder: ""
+    public_folder: ""
+    fields:
+      - { label: "Judul", name: "title", widget: "string" }
+      - { label: "Tanggal", name: "date", widget: "datetime" }
+      - { label: "Draft (belum tayang)", name: "draft", widget: "boolean", default: false }
+      - { label: "Ringkasan (SEO)", name: "description", widget: "text" }
+      - { label: "Ringkasan (tampil di list)", name: "summary", widget: "text" }
+      - { label: "Kategori", name: "categories", widget: "hidden", default: ["Lifestyle"] }
+      - { label: "Tag", name: "tags", widget: "list", default: ["lifestyle"] }
+      - label: "Penulis"
+        name: "authors"
+        widget: "select"
+        multiple: true
+        options: ["nurfaisal", "zaenal"]
+      - { label: "Tampilkan Penulis", name: "showAuthor", widget: "boolean", default: true }
+      - { label: "Foto Cover", name: "cover", widget: "image", required: false, hint: "PENTING: nama file foto WAJIB mengandung kata cover, contoh: cover-nescafe.jpg" }
+      - { label: "Isi Berita", name: "body", widget: "markdown" }
+
+  - name: "teknologi"
+    label: "Teknologi"
+    folder: "content/articles/teknologi"
+    create: true
+    slug: "{{slug}}"
+    path: "{{slug}}/index"
+    media_folder: ""
+    public_folder: ""
+    fields:
+      - { label: "Judul", name: "title", widget: "string" }
+      - { label: "Tanggal", name: "date", widget: "datetime" }
+      - { label: "Draft (belum tayang)", name: "draft", widget: "boolean", default: false }
+      - { label: "Ringkasan (SEO)", name: "description", widget: "text" }
+      - { label: "Ringkasan (tampil di list)", name: "summary", widget: "text" }
+      - { label: "Kategori", name: "categories", widget: "hidden", default: ["Teknologi"] }
+      - { label: "Tag", name: "tags", widget: "list", default: ["teknologi"] }
+      - label: "Penulis"
+        name: "authors"
+        widget: "select"
+        multiple: true
+        options: ["nurfaisal", "zaenal"]
+      - { label: "Tampilkan Penulis", name: "showAuthor", widget: "boolean", default: true }
+      - { label: "Foto Cover", name: "cover", widget: "image", required: false, hint: "PENTING: nama file foto WAJIB mengandung kata cover, contoh: cover-nescafe.jpg" }
+      - { label: "Isi Berita", name: "body", widget: "markdown" }
