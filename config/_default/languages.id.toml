@@ -8,14 +8,14 @@ title = "Nusakabar"
   isoCode = "id"
   rtl = false
   dateFormat = "2 January 2006"
-  logo = "" # opsional, isi path logo kalau ada
+  logo = "img/logo.png" # opsional, isi path logo kalau ada
   description = "Portal berita terkini seputar politik, ekonomi, olahraga, dan teknologi."
 
-[params.author]
-  name = "Redaksi"
-  email = ""
-  headline = "Menyajikan berita terkini dan terpercaya."
-  bio = "Portal berita independen."
-  links = [
-    { github = "https://github.com/paisaal" },
-  ]
+#[params.author]
+#  name = ""
+#  email = ""
+#  headline = "Menyajikan berita terkini dan terpercaya."
+#  bio = "Portal berita independen."
+#  links = [
+#    { github = "https://github.com/paisaal" },
+#  ]
