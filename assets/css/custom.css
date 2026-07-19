@@ -1,0 +1,78 @@
+/*
+  Nusakabar — versi MINIMAL untuk belajar bertahap
+  Cuma 2 perubahan: (1) warna badge kategori, (2) font judul artikel.
+  Border kartu, hover effect, breaking news bar, dll SENGAJA belum
+  dimasukkan — nanti ditambah satu-satu kalau kamu sudah nyaman lihat
+  efek dari bagian ini dulu.
+
+  CARA PAKAI: sama seperti sebelumnya.
+  1. Simpan sebagai assets/css/custom.css
+  2. Di config/_default/params.toml, tambahkan:
+       customCSS = ["css/custom.css"]
+*/
+
+:root {
+  --nk-cat-politik: #1f4d3a;    /* hijau kanopi */
+  --nk-cat-ekonomi: #c88a2e;    /* emas */
+  --nk-cat-olahraga: #b5502e;   /* terracotta */
+  --nk-cat-teknologi: #3e5c6b;  /* biru-abu */
+  --nk-cat-kuliner: #a8632a;    /* coklat hangat */
+  --nk-cat-lifestyle: #7a5a8a;  /* ungu redup */
+}
+
+/* 1. Warna badge kategori — biar tiap kategori punya identitas warna
+      sendiri, bukan abu-abu generik. Kalau selector ini belum kena,
+      inspect elemen badge di situs kamu dan ganti nama classnya. */
+.badge,
+.tag,
+.article-tags a {
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.nk-cat-politik    { background: color-mix(in srgb, var(--nk-cat-politik) 12%, transparent);   color: var(--nk-cat-politik); }
+.nk-cat-ekonomi     { background: color-mix(in srgb, var(--nk-cat-ekonomi) 14%, transparent);   color: var(--nk-cat-ekonomi); }
+.nk-cat-olahraga    { background: color-mix(in srgb, var(--nk-cat-olahraga) 14%, transparent);  color: var(--nk-cat-olahraga); }
+.nk-cat-teknologi   { background: color-mix(in srgb, var(--nk-cat-teknologi) 14%, transparent); color: var(--nk-cat-teknologi); }
+.nk-cat-kuliner     { background: color-mix(in srgb, var(--nk-cat-kuliner) 14%, transparent);   color: var(--nk-cat-kuliner); }
+.nk-cat-lifestyle   { background: color-mix(in srgb, var(--nk-cat-lifestyle) 14%, transparent); color: var(--nk-cat-lifestyle); }
+
+/* 2. Font judul — pakai serif supaya terasa lebih "editorial",
+      beda dari body text yang tetap sans-serif bawaan Blowfish. */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&display=swap');
+
+/* Font judul — versi lebih luas, termasuk hero/featured heading */
+h1, h1 a,
+.article-title, .article-title a,
+.single-title,
+article h1, article h2 {
+  font-family: 'Fraunces', Georgia, serif !important;
+  font-weight: 600 !important;
+}
+
+/* 3. Border kartu + hover effect */
+.article-link--card {
+  border-color: #d8ddd4 !important;
+  border-radius: 10px !important;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.article-link--card:hover {
+  border-color: #1f4d3a !important; /* hijau kanopi muncul pas di-hover */
+  transform: translateY(-2px); /* kartu naik dikit */
+}
+
+/* 4. Hero card — efek hover */
+.hero-card {
+  border-radius: 10px !important;
+  overflow: hidden;
+  display: block;
+}
+
+.hero-card img {
+  transition: transform 0.3s ease;
+}
+
+.hero-card:hover img {
+  transform: scale(1.05); /* gambar zoom in dikit pas di-hover */
+}

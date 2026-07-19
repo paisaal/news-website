@@ -4,7 +4,7 @@ date: 2026-07-18T14:30:00+07:00
 draft: false
 summary: "Beragam kreasi minuman berbahan Nescafé semakin populer di media sosial karena mudah dibuat, terjangkau, dan memiliki cita rasa ala kafe."
 categories: ["Kuliner"]
-tags: ["Kopi", "Nescafé", "Minuman", "Kuliner", "Lifestyle"]
+tags: ["Kopi", "Nescafé", "Minuman", "Lifestyle"]
 authors:
   - "Zaenal"
 showAuthor: true
