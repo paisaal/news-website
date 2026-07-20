@@ -29,7 +29,7 @@ collections:
         multiple: true
         options: ["nurfaisal", "zaenal"]
       - { label: "Tampilkan Penulis", name: "showAuthor", widget: "boolean", default: true }
-      - { label: "Foto Cover", name: "cover", widget: "image", required: false, hint: "PENTING: nama file foto WAJIB mengandung kata cover, contoh: cover-nescafe.jpg" }
+      - { label: "Foto Cover", name: "featured", widget: "image", required: false, hint: "PENTING: nama file foto WAJIB mengandung kata cover, contoh: cover-nescafe.jpg" }
       - { label: "Isi Berita", name: "body", widget: "markdown" }
 
   - name: "lifestyle"
@@ -54,7 +54,7 @@ collections:
         multiple: true
         options: ["nurfaisal", "zaenal"]
       - { label: "Tampilkan Penulis", name: "showAuthor", widget: "boolean", default: true }
-      - { label: "Foto Cover", name: "cover", widget: "image", required: false, hint: "PENTING: nama file foto WAJIB mengandung kata cover, contoh: cover-nescafe.jpg" }
+      - { label: "Foto Cover", name: "featured", widget: "image", required: false, hint: "PENTING: nama file foto WAJIB mengandung kata cover, contoh: cover-nescafe.jpg" }
       - { label: "Isi Berita", name: "body", widget: "markdown" }
 
   - name: "teknologi"
@@ -79,5 +79,5 @@ collections:
         multiple: true
         options: ["nurfaisal", "zaenal"]
       - { label: "Tampilkan Penulis", name: "showAuthor", widget: "boolean", default: true }
-      - { label: "Foto Cover", name: "cover", widget: "image", required: false, hint: "PENTING: nama file foto WAJIB mengandung kata cover, contoh: cover-nescafe.jpg" }
+      - { label: "Foto Cover", name: "featured", widget: "image", required: false, hint: "PENTING: nama file foto WAJIB mengandung kata cover, contoh: cover-nescafe.jpg" }
       - { label: "Isi Berita", name: "body", widget: "markdown" }
