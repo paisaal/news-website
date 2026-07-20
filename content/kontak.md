@@ -13,7 +13,8 @@ showRelatedContent: false
 
 Ada pertanyaan, kritik, saran, atau mau kirim tips berita? Silakan hubungi kami lewat salah satu kanal berikut:
 
-- **Email:** [nurfaisal240604@gmail.com](mailto:ganti-dengan-email-kamu@contoh.com)
+- **Email:** [nurfaisal240604@gmail.com](mailto:nurfaisal240604@gmail.com)
+- **Email:** [zaenal.hudaya@gmail.com](mailto:zaenal.hudaya@gmail.com)
 - **Instagram:** [@pa.isaal](https://instagram.com/pa.isaal)
 - **Instagram:** [@zen_hood](https://instagram.com/zen_hood)
 
