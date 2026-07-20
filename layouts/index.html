@@ -6,10 +6,7 @@
   {{ $moreStories := after 4 (first 10 $articles) }}
 
   {{ $catColors := dict
-    "politik" "#ef4444"
-    "ekonomi" "#f59e0b"
     "kuliner" "#f59e0b"
-    "olahraga" "#22c55e"
     "lifestyle" "#ec4899"
     "teknologi" "#3b82f6"
   }}
@@ -181,10 +178,15 @@
       {{ $catSlug = index . 0 | urlize }}
     {{ end }}
     {{ $imgURL := "" }}
-    {{ $images := .Resources.ByType "image" }}
-    {{ range slice "*feature*" "*cover*" "*thumbnail*" }}
-      {{ if not $imgURL }}
-        {{ with $images.GetMatch . }}{{ $imgURL = (.Resize "900x q75").RelPermalink }}{{ end }}
+    {{ with .Params.featureimage }}
+      {{ with $headline.Resources.Get . }}{{ $imgURL = (.Resize "900x q75").RelPermalink }}{{ end }}
+    {{ end }}
+    {{ if not $imgURL }}
+      {{ $images := .Resources.ByType "image" }}
+      {{ range slice "*feature*" "*cover*" "*thumbnail*" }}
+        {{ if not $imgURL }}
+          {{ with $images.GetMatch . }}{{ $imgURL = (.Resize "900x q75").RelPermalink }}{{ end }}
+        {{ end }}
       {{ end }}
     {{ end }}
 
@@ -208,14 +210,20 @@
 
       <div class="nk-side-list">
         {{ range $sideStories }}
+          {{ $sPage := . }}
           {{ $sCatSlug := "" }}
           {{ with .Params.categories }}{{ $sCatSlug = index . 0 | urlize }}{{ end }}
           {{ $sColor := or (index $catColors $sCatSlug) $defaultColor }}
           {{ $sImgURL := "" }}
-          {{ $sImages := .Resources.ByType "image" }}
-          {{ range slice "*feature*" "*cover*" "*thumbnail*" }}
-            {{ if not $sImgURL }}
-              {{ with $sImages.GetMatch . }}{{ $sImgURL = (.Fill "120x120 q60").RelPermalink }}{{ end }}
+          {{ with .Params.featureimage }}
+            {{ with $sPage.Resources.Get . }}{{ $sImgURL = (.Fill "120x120 q60").RelPermalink }}{{ end }}
+          {{ end }}
+          {{ if not $sImgURL }}
+            {{ $sImages := $sPage.Resources.ByType "image" }}
+            {{ range slice "*feature*" "*cover*" "*thumbnail*" }}
+              {{ if not $sImgURL }}
+                {{ with $sImages.GetMatch . }}{{ $sImgURL = (.Fill "120x120 q60").RelPermalink }}{{ end }}
+              {{ end }}
             {{ end }}
           {{ end }}
           <a href="{{ .RelPermalink }}" class="nk-side-item">
@@ -238,11 +246,17 @@
     <p class="nk-more-heading">Berita Terbaru</p>
     <div class="nk-more-grid">
       {{ range $moreStories }}
+        {{ $mPage := . }}
         {{ $mImgURL := "" }}
-        {{ $mImages := .Resources.ByType "image" }}
-        {{ range slice "*feature*" "*cover*" "*thumbnail*" }}
-          {{ if not $mImgURL }}
-            {{ with $mImages.GetMatch . }}{{ $mImgURL = (.Resize "400x q65").RelPermalink }}{{ end }}
+        {{ with .Params.featureimage }}
+          {{ with $mPage.Resources.Get . }}{{ $mImgURL = (.Resize "400x q65").RelPermalink }}{{ end }}
+        {{ end }}
+        {{ if not $mImgURL }}
+          {{ $mImages := $mPage.Resources.ByType "image" }}
+          {{ range slice "*feature*" "*cover*" "*thumbnail*" }}
+            {{ if not $mImgURL }}
+              {{ with $mImages.GetMatch . }}{{ $mImgURL = (.Resize "400x q65").RelPermalink }}{{ end }}
+            {{ end }}
           {{ end }}
         {{ end }}
         {{ $mCatSlug := "" }}

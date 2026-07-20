@@ -27,9 +27,9 @@ collections:
         name: "authors"
         widget: "select"
         multiple: true
-        options: ["nurfaisal", "zaenal"]
+        options: ["Nurfaisal", "Zaenal"]
       - { label: "Tampilkan Penulis", name: "showAuthor", widget: "boolean", default: true }
-      - { label: "Foto Cover", name: "featured", widget: "image", required: false, hint: "PENTING: nama file foto WAJIB mengandung kata cover, contoh: cover-nescafe.jpg" }
+      - { label: "Foto Cover", name: "featureimage", widget: "image", required: false, hint: "Upload foto apa aja, nama file bebas — bakal otomatis kepake jadi cover." }
       - { label: "Isi Berita", name: "body", widget: "markdown" }
 
   - name: "lifestyle"
@@ -52,9 +52,9 @@ collections:
         name: "authors"
         widget: "select"
         multiple: true
-        options: ["nurfaisal", "zaenal"]
+        options: ["Nurfaisal", "Zaenal"]
       - { label: "Tampilkan Penulis", name: "showAuthor", widget: "boolean", default: true }
-      - { label: "Foto Cover", name: "featured", widget: "image", required: false, hint: "PENTING: nama file foto WAJIB mengandung kata cover, contoh: cover-nescafe.jpg" }
+      - { label: "Foto Cover", name: "featureimage", widget: "image", required: false, hint: "Upload foto apa aja, nama file bebas — bakal otomatis kepake jadi cover." }
       - { label: "Isi Berita", name: "body", widget: "markdown" }
 
   - name: "teknologi"
@@ -77,7 +77,7 @@ collections:
         name: "authors"
         widget: "select"
         multiple: true
-        options: ["nurfaisal", "zaenal"]
+        options: ["Nurfaisal", "Zaenal"]
       - { label: "Tampilkan Penulis", name: "showAuthor", widget: "boolean", default: true }
-      - { label: "Foto Cover", name: "featured", widget: "image", required: false, hint: "PENTING: nama file foto WAJIB mengandung kata cover, contoh: cover-nescafe.jpg" }
+      - { label: "Foto Cover", name: "featureimage", widget: "image", required: false, hint: "Upload foto apa aja, nama file bebas — bakal otomatis kepake jadi cover." }
       - { label: "Isi Berita", name: "body", widget: "markdown" }
