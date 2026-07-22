@@ -28,7 +28,7 @@ disableTextInHeader = true
 
 defaultBackgroundImage = "/img/background.svg"
 defaultFeaturedImage = "/img/featured.svg"
-defaultSocialImage = "/img/og-default.png"
+defaultSocialImage = "/img/og-default.jpg"
 hotlinkFeatureImage = false
 # imagePosition = "50% 50%"
 
