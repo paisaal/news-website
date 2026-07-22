@@ -2,6 +2,8 @@ backend:
   name: git-gateway
   branch: main
 
+logo_url: /img/logo.png
+
 publish_mode: simple
 media_folder: ""
 public_folder: ""
