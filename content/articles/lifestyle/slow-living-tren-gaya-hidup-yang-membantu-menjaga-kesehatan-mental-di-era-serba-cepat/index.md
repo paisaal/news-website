@@ -28,13 +28,13 @@ Di tengah perkembangan teknologi dan derasnya arus informasi, banyak orang meras
 
 Slow living bukan berarti hidup dengan lambat atau menghindari pekerjaan. Sebaliknya, gaya hidup ini mengajak seseorang untuk lebih sadar dalam menjalani aktivitas sehari-hari, memprioritaskan hal-hal yang benar-benar penting, serta menikmati setiap proses tanpa harus terburu-buru.
 
-Apa Itu Slow Living?
+**Apa Itu Slow Living?**
 
 Slow living adalah pendekatan hidup yang menekankan kualitas dibanding kuantitas. Seseorang yang menerapkan konsep ini berusaha mengurangi tekanan untuk selalu sibuk dan lebih fokus pada keseimbangan antara pekerjaan, kesehatan, keluarga, serta waktu untuk diri sendiri.
 
 Misalnya, daripada menghabiskan waktu berjam-jam menggulir media sosial, seseorang memilih membaca buku, berjalan santai di taman, atau menikmati secangkir kopi tanpa gangguan gawai.
 
-Mengapa Slow Living Semakin Populer?
+**Mengapa Slow Living Semakin Populer?**
 
 Beberapa tahun terakhir, banyak orang mulai menyadari pentingnya menjaga kesehatan mental. Tekanan pekerjaan, kehidupan digital, dan ekspektasi sosial membuat banyak individu mencari cara agar hidup terasa lebih seimbang.
 
@@ -44,7 +44,9 @@ Mengurangi tingkat stres akibat rutinitas yang padat.
 Membantu meningkatkan fokus saat bekerja.
 Memberikan waktu berkualitas bersama keluarga dan teman.
 Membantu seseorang lebih menghargai momen-momen sederhana dalam kehidupan.
-Cara Memulai Slow Living
+
+
+**Cara Memulai Slow Living**
 
 Menerapkan slow living tidak harus dilakukan secara drastis. Beberapa kebiasaan sederhana berikut dapat menjadi langkah awal.
 
@@ -74,7 +76,7 @@ Tidak semua orang memiliki ritme kehidupan yang sama. Namun, prinsip slow living
 
 Yang terpenting bukanlah mengurangi produktivitas, melainkan memastikan bahwa setiap aktivitas dilakukan dengan penuh kesadaran tanpa mengorbankan kesehatan fisik maupun mental.
 
-Kesimpulan
+**Kesimpulan**
 
 Slow living bukan sekadar tren, melainkan sebuah cara untuk mengembalikan keseimbangan di tengah kehidupan modern yang serba cepat. Dengan mengurangi tekanan untuk selalu sibuk dan lebih menghargai setiap momen, seseorang dapat meningkatkan kualitas hidup sekaligus menjaga kesehatan mental.
 
