@@ -29,7 +29,7 @@ collections:
         name: "authors"
         widget: "select"
         multiple: true
-        options: ["Nurfaisal", "Zaenal"]
+        options: ["Nurfaisal", "Zaenal", "Rizky"]
       - { label: "Tampilkan Penulis", name: "showAuthor", widget: "boolean", default: true }
       - { label: "Foto Cover", name: "featureimage", widget: "image", required: false, hint: "Upload foto apa aja, nama file bebas — bakal otomatis kepake jadi cover." }
       - { label: "Isi Berita", name: "body", widget: "markdown" }
@@ -54,7 +54,7 @@ collections:
         name: "authors"
         widget: "select"
         multiple: true
-        options: ["Nurfaisal", "Zaenal"]
+        options: ["Nurfaisal", "Zaenal", "Rizky"]
       - { label: "Tampilkan Penulis", name: "showAuthor", widget: "boolean", default: true }
       - { label: "Foto Cover", name: "featureimage", widget: "image", required: false, hint: "Upload foto apa aja, nama file bebas — bakal otomatis kepake jadi cover." }
       - { label: "Isi Berita", name: "body", widget: "markdown" }
@@ -79,7 +79,7 @@ collections:
         name: "authors"
         widget: "select"
         multiple: true
-        options: ["Nurfaisal", "Zaenal"]
+        options: ["Nurfaisal", "Zaenal", "Rizky"]
       - { label: "Tampilkan Penulis", name: "showAuthor", widget: "boolean", default: true }
       - { label: "Foto Cover", name: "featureimage", widget: "image", required: false, hint: "Upload foto apa aja, nama file bebas — bakal otomatis kepake jadi cover." }
       - { label: "Isi Berita", name: "body", widget: "markdown" }
